@@ -22,9 +22,14 @@ class Research extends Model
         'end_date',
         'image',
         'status',
+
     ];
     public function getRouteKeyName()
     {
         return 'slug';
+    }
+    public function teams()
+    {
+        return $this->belongsToMany(Team::class);
     }
 }

@@ -4,6 +4,8 @@
 @section('header', 'Tambah Data Luaran')
 
 @section('content')
+
+<div class="max-w-3xl mx-auto">
     <div class="mb-8 flex items-center justify-between">
         <a href="{{ route('admin.output.index') }}" class="text-slate-500 hover:text-[#800000] transition flex items-center font-medium bg-white px-4 py-2 rounded-full shadow-sm border border-slate-100">
             <i class="fa-solid fa-arrow-left mr-2"></i> Kembali ke Daftar
@@ -86,7 +88,7 @@
             </div>
         </form>
     </div>
-
+</div>
     <script>
         function showFileName(input) {
             const fileNameDisplay = document.getElementById('file-name-display');

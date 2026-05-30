@@ -25,4 +25,8 @@ class CommunityService extends Model
     {
         return 'slug';
     }
+    public function teams()
+    {
+        return $this->belongsToMany(Team::class, 'service_team', 'service_id', 'team_id');
+    }
 }

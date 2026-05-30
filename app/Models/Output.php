@@ -42,4 +42,8 @@ class Output extends Model
     {
         return $query->where('type', 'penghargaan');
     }
+    public function teams()
+    {
+        return $this->belongsToMany(Team::class);
+    }
 }

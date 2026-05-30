@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Admin Panel - Pusat Studi STEM')</title>
 
+    <link rel="icon" type="image/x-icon" href="{{ asset('image/favicon.webp') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -35,7 +36,7 @@
         </div>
 
         <nav class="flex-1 px-4 py-8 space-y-2 overflow-y-auto">
-            
+
             <a href="{{ route('admin.dashboard') }}"
                 class="flex items-center px-4 py-3.5 rounded-2xl {{ request()->routeIs('admin.dashboard') ? 'bg-gradient-to-r from-[#800000] to-[#6a0000] text-white shadow-lg shadow-red-900/20 transform hover:-translate-y-0.5' : 'text-slate-400 hover:bg-slate-800/50 hover:text-white' }} transition duration-300 mb-6">
                 <div class="w-8 flex justify-center"><i
@@ -45,7 +46,13 @@
             </a>
 
             <p class="px-4 text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-4">Manajemen Konten</p>
-
+<a href="{{ route('admin.team.index') }}"
+                class="flex items-center px-4 py-3.5 rounded-2xl {{ request()->routeIs('admin.team.*') ? 'bg-gradient-to-r from-[#800000] to-[#6a0000] text-white shadow-lg shadow-red-900/20 transform hover:-translate-y-0.5' : 'text-slate-400 hover:bg-slate-800/50 hover:text-white' }} transition duration-300">
+                <div class="w-8 flex justify-center"><i
+                        class="fa-solid fa-users {{ request()->routeIs('admin.team.*') ? 'text-red-200' : '' }}"></i>
+                </div>
+                <span class="font-medium text-sm">Data Tim</span>
+            </a>
             <a href="{{ route('admin.research.index') }}"
                 class="flex items-center px-4 py-3.5 rounded-2xl {{ request()->routeIs('admin.research.*') ? 'bg-gradient-to-r from-[#800000] to-[#6a0000] text-white shadow-lg shadow-red-900/20 transform hover:-translate-y-0.5' : 'text-slate-400 hover:bg-slate-800/50 hover:text-white' }} transition duration-300">
                 <div class="w-8 flex justify-center"><i
@@ -77,6 +84,15 @@
                 </div>
                 <span class="font-medium text-sm">Data Kerja Sama</span>
             </a>
+
+            <a href="{{ route('admin.slider.index') }}"
+                class="flex items-center px-4 py-3.5 rounded-2xl {{ request()->routeIs('admin.slider.*') ? 'bg-gradient-to-r from-[#800000] to-[#6a0000] text-white shadow-lg shadow-red-900/20 transform hover:-translate-y-0.5' : 'text-slate-400 hover:bg-slate-800/50 hover:text-white' }} transition duration-300">
+                <div class="w-8 flex justify-center"><i
+                        class="fa-solid fa-images {{ request()->routeIs('admin.slider.*') ? 'text-red-200' : '' }}"></i>
+                </div>
+                <span class="font-medium text-sm">Data Slider</span>
+            </a>
+
         </nav>
 
         <div class="p-6 border-t border-slate-800/50">

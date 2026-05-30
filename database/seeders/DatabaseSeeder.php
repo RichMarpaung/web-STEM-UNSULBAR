@@ -26,11 +26,12 @@ User::create([
             'email' => 'admin@stem.com',
             'password' => Hash::make('password'), // Password Anda
         ]);
-        $this->call([
-            ResearchSeeder::class,
-            CommunityServiceSeeder::class,
-            OutputSeeder::class,
-            PartnerSeeder::class,
-        ]);
+        // $this->call([
+        //     ResearchSeeder::class,
+        //     CommunityServiceSeeder::class,
+        //     OutputSeeder::class,
+        //     PartnerSeeder::class,
+        //     TeamSeeder::class,
+        // ]);
     }
 }

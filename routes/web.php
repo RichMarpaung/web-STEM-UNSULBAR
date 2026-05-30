@@ -5,19 +5,21 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\OutputController as AdminOutputController;
 use App\Http\Controllers\Admin\PartnerController as AdminPartnerController;
 use App\Http\Controllers\Admin\ResearchController as AdminResearchController;
+use App\Http\Controllers\Admin\TeamController as AdminTeamController;
+use App\Http\Controllers\Admin\SliderController as AdminSliderController;
 use App\Http\Controllers\CommunityServiceController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\OutputController;
 use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResearchController;
+use App\Models\Team;
 use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [LandingController::class, 'index'])->name('landing');
-Route::get('/2', [LandingController::class, 'index2'])->name('landing2');
-Route::get('/3', [LandingController::class, 'index3'])->name('landing3');
-Route::get('/tentang-kami', [LandingController::class, 'about'])->name('about');
+Route::get('/about', [LandingController::class, 'about'])->name('about');
+
 Route::get('/penelitian', [ResearchController::class, 'index'])->name('research.index');
 Route::get('/penelitian/{research}', [ResearchController::class, 'show'])->name('research.show');
 
@@ -45,8 +47,10 @@ Route::prefix('admin')->name('admin.')->middleware(['auth'])->group(function () 
         'output' => 'output',
     ]);
     Route::resource('partner', AdminPartnerController::class)->parameters([
-    'partner' => 'partner'
-]);
+        'partner' => 'partner',
+    ]);
+    Route::resource('team', AdminTeamController::class);
+    Route::resource('slider', AdminSliderController::class);
 });
 
 Route::get('/dashboard', function () {
