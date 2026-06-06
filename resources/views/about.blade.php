@@ -3,18 +3,12 @@
 @section('title', 'Tentang Kami | Pusat Studi STEM')
 
 @section('content')
-    <!-- CSS ANIMASI & AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         /* Animasi Grid Mengalir ke Bawah */
         @keyframes gridFlow {
-            0% {
-                transform: translateY(0);
-            }
-
-            100% {
-                transform: translateY(40px);
-            }
+            0% { transform: translateY(0); }
+            100% { transform: translateY(40px); }
         }
 
         .animate-grid-flow {
@@ -23,14 +17,8 @@
 
         /* Animasi Ikon Bernapas (Pulse) */
         @keyframes softPulse {
-            0%, 100% {
-                opacity: 0.1;
-                transform: scale(1);
-            }
-            50% {
-                opacity: 0.2;
-                transform: scale(1.05);
-            }
+            0%, 100% { opacity: 0.1; transform: scale(1); }
+            50% { opacity: 0.2; transform: scale(1.05); }
         }
 
         .animate-soft-pulse {
@@ -38,10 +26,8 @@
         }
     </style>
 
-    <!-- HERO SECTION -->
     <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-[#4a0000] py-20 lg:py-24 border-b-8 border-amber-500 relative overflow-hidden">
 
-        <!-- Ornamen Latar: Animasi Grid Flow -->
         <div class="absolute inset-0 opacity-5 overflow-hidden">
             <svg class="absolute -top-10 left-0 w-full h-[calc(100%+40px)] animate-grid-flow" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -53,7 +39,6 @@
             </svg>
         </div>
 
-        <!-- Ikon Jaringan (Animasi Bernapas) -->
         <div class="absolute inset-0 animate-soft-pulse pointer-events-none">
             <i class="fa-solid fa-network-wired text-[15rem] absolute -right-10 -bottom-10 text-white transform -rotate-12"></i>
         </div>
@@ -81,7 +66,7 @@
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Visi Kami</h2>
                 <div class="relative">
                     <i class="fa-solid fa-quote-left text-4xl absolute -top-4 -left-2 text-slate-100 -z-10"></i>
-                    <p class="text-slate-600 leading-relaxed text-lg italic font-medium z-10 relative">
+                    <p class="text-slate-600 leading-relaxed text-lg italic font-medium z-10 relative text-justify">
                         "Menjadi pusat unggulan (Centre of Excellence) dalam Science, Technology, Engineering dan Mathematics (STEM) dan STEM education yang inovatif, kolaboratif, dan berkelanjutan untuk menghasilkan riset berdampak, mempercepat hilirisasi inovasi, serta menumbuhkan generasi entreprenur yang berdaya saing global dan berakar pada potensi lokal."
                     </p>
                 </div>
@@ -97,44 +82,42 @@
                         <div class="w-6 h-6 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mt-0.5 mr-4 flex-shrink-0 group-hover/list:bg-amber-500 group-hover/list:text-white transition-colors">
                             <i class="fa-solid fa-check text-xs"></i>
                         </div>
-                        <span>Mengembangkan riset dan inovasi STEM yang berkualitas dan relevan dengan kebutuhan masyarakat, industri, dan pembangunan daerah melalui pendekatan multidisiplin dan berbasis potensi lokal.</span>
+                        <span class="text-justify">Mengembangkan riset dan inovasi STEM yang berkualitas dan relevan dengan kebutuhan masyarakat, industri, dan pembangunan daerah melalui pendekatan multidisiplin dan berbasis potensi lokal.</span>
                     </li>
                     <li class="flex items-start group/list">
                         <div class="w-6 h-6 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mt-0.5 mr-4 flex-shrink-0 group-hover/list:bg-amber-500 group-hover/list:text-white transition-colors">
                             <i class="fa-solid fa-check text-xs"></i>
                         </div>
-                        <span>Mendorong hilirisasi hasil riset dan inovasi menjadi produk, teknologi, model, maupun layanan yang memberikan manfaat nyata bagi masyarakat serta memiliki nilai ekonomi dan sosial yang berkelanjutan.</span>
+                        <span class="text-justify">Mendorong hilirisasi hasil riset dan inovasi menjadi produk, teknologi, model, maupun layanan yang memberikan manfaat nyata bagi masyarakat serta memiliki nilai ekonomi dan sosial yang berkelanjutan.</span>
                     </li>
                     <li class="flex items-start group/list">
                         <div class="w-6 h-6 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mt-0.5 mr-4 flex-shrink-0 group-hover/list:bg-amber-500 group-hover/list:text-white transition-colors">
                             <i class="fa-solid fa-check text-xs"></i>
                         </div>
-                        <span>Membangun ekosistem kewirausahaan berbasis STEM (STEM-preneurship) melalui pendampingan, inkubasi, pelatihan, dan penguatan kapasitas mahasiswa, dosen, serta masyarakat.</span>
+                        <span class="text-justify">Membangun ekosistem kewirausahaan berbasis STEM (STEM-preneurship) melalui pendampingan, inkubasi, pelatihan, dan penguatan kapasitas mahasiswa, dosen, serta masyarakat.</span>
                     </li>
                     <li class="flex items-start group/list">
                         <div class="w-6 h-6 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mt-0.5 mr-4 flex-shrink-0 group-hover/list:bg-amber-500 group-hover/list:text-white transition-colors">
                             <i class="fa-solid fa-check text-xs"></i>
                         </div>
-                        <span>Memperkuat kolaborasi pentahelix antara perguruan tinggi, pemerintah, industri, sekolah, komunitas, dan media untuk mempercepat transfer pengetahuan, adopsi teknologi, serta pengembangan inovasi daerah.</span>
+                        <span class="text-justify">Memperkuat kolaborasi pentahelix antara perguruan tinggi, pemerintah, industri, sekolah, komunitas, dan media untuk mempercepat transfer pengetahuan, adopsi teknologi, serta pengembangan inovasi daerah.</span>
                     </li>
                     <li class="flex items-start group/list">
                         <div class="w-6 h-6 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mt-0.5 mr-4 flex-shrink-0 group-hover/list:bg-amber-500 group-hover/list:text-white transition-colors">
                             <i class="fa-solid fa-check text-xs"></i>
                         </div>
-                        <span>Mengembangkan pendidikan dan literasi STEM yang inklusif dan transformatif guna meningkatkan minat, kompetensi, dan orientasi karir generasi muda pada bidang sains, teknologi, rekayasa, dan matematika.</span>
+                        <span class="text-justify">Mengembangkan pendidikan dan literasi STEM yang inklusif dan transformatif guna meningkatkan minat, kompetensi, dan orientasi karir generasi muda pada bidang sains, teknologi, rekayasa, dan matematika.</span>
                     </li>
                     <li class="flex items-start group/list">
                         <div class="w-6 h-6 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mt-0.5 mr-4 flex-shrink-0 group-hover/list:bg-amber-500 group-hover/list:text-white transition-colors">
                             <i class="fa-solid fa-check text-xs"></i>
                         </div>
-                        <span>Menjadi pusat diseminasi dan jejaring STEM regional dan nasional melalui penyelenggaraan program, festival, pelatihan, publikasi, dan kemitraan strategis yang mendukung pembangunan berkelanjutan Sulawesi Barat.</span>
+                        <span class="text-justify">Menjadi pusat diseminasi dan jejaring STEM regional dan nasional melalui penyelenggaraan program, festival, pelatihan, publikasi, dan kemitraan strategis yang mendukung pembangunan berkelanjutan Sulawesi Barat.</span>
                     </li>
                 </ul>
             </div>
 
-            <!-- KARTU MOTTO (Disesuaikan dengan Kearifan Lokal) -->
             <div data-aos="fade-up" data-aos-delay="400" class="md:col-span-2 bg-white rounded-2xl shadow-xl p-8 sm:p-12 border-t-8 border-amber-500 transform transition duration-500 hover:-translate-y-2 group flex flex-col items-center text-center relative overflow-hidden">
-
                 <i class="fa-solid fa-lightbulb absolute -right-10 -top-10 text-[12rem] text-amber-50 opacity-50 transform rotate-12 transition duration-700 group-hover:rotate-0 group-hover:scale-110"></i>
 
                 <div class="relative z-10 w-full">
@@ -163,6 +146,102 @@
                 </div>
             </div>
 
+            <!-- KARTU PENJELASAN LOGO (Diperbarui dengan Filosofi Asli) -->
+            <div data-aos="fade-up" data-aos-delay="550" class="md:col-span-2 bg-white rounded-2xl shadow-xl p-8 sm:p-12 border-t-8 border-slate-300 transform transition duration-500 hover:-translate-y-2 group overflow-hidden relative">
+
+                <!-- Ornamen Transparan -->
+                <i class="fa-solid fa-fingerprint absolute -left-10 -bottom-10 text-[15rem] text-slate-50 opacity-60 transform -rotate-12 transition duration-700 group-hover:rotate-0 group-hover:scale-110"></i>
+
+                <div class="relative z-10 flex flex-col lg:flex-row items-start gap-12">
+
+                    <!-- Bagian Kiri: Visual Logo -->
+                    <div class="w-full lg:w-1/3 flex flex-col items-center justify-center lg:sticky lg:top-28">
+                        <div class="w-56 h-56 sm:w-64 sm:h-64 bg-slate-50 rounded-full border-4 border-white shadow-lg flex items-center justify-center overflow-hidden p-6 group-hover:border-slate-100 transition-colors duration-300">
+                            <!-- Ganti tag <i> di bawah ini dengan logo asli Anda. Hapus ikon <i> jika sudah pakai gambar <img> -->
+                             <img src="{{ asset('image/logo.webp') }}" alt="Logo Pusat Studi STEM" class="w-full h-full object-contain">
+
+                        </div>
+                        <span class="mt-6 text-xs font-bold uppercase tracking-widest text-slate-400">Identitas Visual & Filosofi</span>
+                    </div>
+
+                    <!-- Bagian Kanan: Penjelasan Makna -->
+                    <div class="w-full lg:w-2/3">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4 flex items-center">
+                            <span class="w-1.5 h-6 bg-[#800000] rounded-full mr-3"></span> Filosofi Logo
+                        </h2>
+
+                        <!-- Kutipan Filosofi Utama -->
+                        <div class="bg-red-50/50 border border-red-100 rounded-xl p-5 mb-8">
+                            <p class="text-lg font-bold text-[#800000] italic text-center leading-relaxed">
+                                “Mengintegrasikan ilmu pengetahuan, teknologi, budaya, dan pendidikan untuk membangun masa depan yang inovatif dan berkelanjutan.”
+                            </p>
+                        </div>
+
+                        <p class="text-slate-600 font-medium text-justify mb-8 leading-relaxed">
+                            Logo ini menggambarkan komitmen Pusat Studi STEM Education Universitas Sulawesi Barat dalam mengembangkan pendidikan STEM yang inovatif, berbasis riset dan teknologi, menjunjung nilai budaya lokal, serta menciptakan generasi unggul yang kreatif, adaptif, dan berdaya saing global.
+                        </p>
+
+                        <div class="space-y-8">
+                            <!-- Elemen 1: Lingkaran -->
+                            <div class="flex items-start group/item">
+                                <div class="w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 mr-5 mt-1 group-hover/item:bg-[#800000] group-hover/item:text-white transition-colors shadow-sm">
+                                    <i class="fa-solid fa-circle-notch text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800 text-base mb-2">Lingkaran Utama</h4>
+                                    <p class="text-sm text-slate-600 text-justify leading-relaxed">
+                                        Bentuk lingkaran melambangkan persatuan, kesinambungan ilmu pengetahuan, kolaborasi multidisiplin, dan pengembangan pendidikan STEM yang berkelanjutan. Tulisan "PUSAT STUDI STEM EDUCATION" menunjukkan identitas lembaga sebagai pusat pengembangan pembelajaran berbasis Science, Technology, Engineering, dan Mathematics.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Elemen 2: Pena & Buku -->
+                            <div class="flex items-start group/item">
+                                <div class="w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 mr-5 mt-1 group-hover/item:bg-[#800000] group-hover/item:text-white transition-colors shadow-sm">
+                                    <i class="fa-solid fa-book-open-reader text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800 text-base mb-2">Simbol Pena dan Buku Terbuka</h4>
+                                    <p class="text-sm text-slate-600 text-justify leading-relaxed">
+                                        <strong>Pena</strong> yang tegak melambangkan pendidikan, intelektualitas, kreativitas, dan arah menuju inovasi masa depan dengan integritas akademik. <strong>Buku terbuka</strong> melambangkan sumber ilmu, literasi, dan keterbukaan terhadap sains. Gabungannya merepresentasikan filosofi bahwa <em>"Ilmu pengetahuan menjadi fondasi utama membangun generasi inovatif."</em>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Elemen 3: Sayap Mandar -->
+                            <div class="flex items-start group/item">
+                                <div class="w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 mr-5 mt-1 group-hover/item:bg-[#800000] group-hover/item:text-white transition-colors shadow-sm">
+                                    <i class="fa-solid fa-feather-pointed text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800 text-base mb-2">Sayap Bermotif Mandar</h4>
+                                    <p class="text-sm text-slate-600 text-justify leading-relaxed">
+                                        Sayap melambangkan semangat, kemajuan, kreativitas, dan cita-cita tinggi. Motif tenun sutra khas Mandar merepresentasikan identitas budaya lokal Sulawesi Barat, nilai kearifan lokal, dan integrasi budaya dalam pendidikan modern. Bentuk sayap yang melingkar menggambarkan harmoni antara ilmu pengetahuan, budaya, dan inovasi.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Elemen 4: Warna -->
+                            <div class="flex items-start group/item">
+                                <div class="w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 mr-5 mt-1 group-hover/item:bg-[#800000] group-hover/item:text-white transition-colors shadow-sm">
+                                    <i class="fa-solid fa-palette text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800 text-base mb-2">Kombinasi Warna</h4>
+                                    <ul class="text-sm text-slate-600 space-y-2">
+                                        <li><span class="inline-block w-3 h-3 rounded-full bg-[#800000] mr-2"></span><strong>Merah Marun:</strong> Semangat, keberanian, kekuatan, dan dedikasi akademik.</li>
+                                        <li><span class="inline-block w-3 h-3 rounded-full bg-amber-400 mr-2"></span><strong>Emas:</strong> Kejayaan, kualitas, prestasi, dan kemuliaan ilmu pengetahuan.</li>
+                                        <li><span class="inline-block w-3 h-3 rounded-full border border-slate-300 bg-white mr-2"></span><strong>Putih:</strong> Ketulusan, keterbukaan, integritas, dan objektivitas ilmiah.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
         </div>
     </div>
 
@@ -187,8 +266,7 @@
                             <img src="{{ asset('storage/' . $member->image) }}" alt="Foto {{ $member->name }}"
                                 class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition duration-1000">
                         @else
-                            <div
-                                class="absolute inset-0 w-full h-full bg-gradient-to-br from-slate-200 to-slate-300 text-slate-400 flex items-center justify-center text-7xl">
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-slate-200 to-slate-300 text-slate-400 flex items-center justify-center text-7xl">
                                 <i class="fa-solid fa-user"></i>
                             </div>
                         @endif
@@ -205,7 +283,6 @@
                                 {{ $member->name }}
                             </h3>
 
-                            <!-- DERETAN IKON INDEKSASI AKADEMIK -->
                             <div class="flex items-center space-x-3 mt-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 transform scale-95 group-hover:scale-100">
 
                                 @if ($member->scholar_url)

@@ -24,4 +24,8 @@ class Team extends Model
     {
         return $this->belongsToMany(Output::class, 'output_team', 'team_id', 'output_id');
     }
+    public function workPrograms()
+    {
+        return $this->belongsToMany(WorkProgram::class, 'team_work_program', 'team_id', 'work_program_id');
+    }
 }

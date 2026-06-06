@@ -79,7 +79,7 @@
                         </div>
                         <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus autocomplete="username"
                             class="block w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-[#800000]/20 focus:border-[#800000] focus:bg-white outline-none transition-all @error('email') border-red-500 bg-red-50 @enderror"
-                            placeholder="admin@stem.com">
+                            placeholder="Masukkan Email Anda">
                     </div>
                     @error('email')
                         <p class="mt-2 text-xs text-red-600 font-medium"><i class="fa-solid fa-circle-exclamation mr-1"></i> {{ $message }}</p>
@@ -91,9 +91,9 @@
                     <div class="flex items-center justify-between mb-2">
                         <label for="password" class="block text-sm font-bold text-slate-700">Kata Sandi</label>
                         <!-- Jika Anda mengaktifkan fitur lupa password Breeze, link ini akan berguna -->
-                        @if (Route::has('password.request'))
+                        {{-- @if (Route::has('password.request'))
                             <a href="{{ route('password.request') }}" class="text-xs font-semibold text-[#800000] hover:text-[#5a0000] transition">Lupa sandi?</a>
-                        @endif
+                        @endif --}}
                     </div>
                     <div class="relative border-slate-200">
                         <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">

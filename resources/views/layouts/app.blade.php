@@ -31,6 +31,10 @@
                     <a href="{{ route('about') }}"
                         class="px-3 py-2 rounded-md transition {{ request()->routeIs('about') ? 'bg-red-50 text-[#800000]' : 'hover:bg-red-50 hover:text-[#800000]' }}">Tentang
                         Kami</a>
+                        <a href="{{ route('work_program.index') }}"
+                        class="px-3 py-2 rounded-md transition {{ request()->routeIs('work_program.*') ? 'bg-red-50 text-[#800000]' : 'hover:bg-red-50 hover:text-[#800000]' }}">
+                        Program Kerja
+                    </a>
                     <a href="{{ route('research.index') }}"
                         class="px-3 py-2 rounded-md transition {{ request()->routeIs('research.*') ? 'bg-red-50 text-[#800000]' : 'hover:bg-red-50 hover:text-[#800000]' }}">Penelitian</a>
                     <a href="{{ route('service.index') }}"
@@ -62,7 +66,10 @@
                 class="block px-3 py-2 rounded-md transition {{ request()->routeIs('about') ? 'bg-red-50 text-[#800000] font-semibold' : 'text-slate-800 hover:bg-red-50 hover:text-[#800000]' }}">
                 Tentang Kami
             </a>
-
+<a href="{{ route('work_program.index') }}"
+                class="block px-3 py-2 rounded-md transition {{ request()->routeIs('work_program.*') ? 'bg-red-50 text-[#800000] font-semibold' : 'text-slate-800 hover:bg-red-50 hover:text-[#800000]' }}">
+                Program Kerja
+            </a>
             <a href="{{ route('research.index') }}"
                 class="block px-3 py-2 rounded-md transition {{ request()->routeIs('research.*') ? 'bg-red-50 text-[#800000] font-semibold' : 'text-slate-800 hover:bg-red-50 hover:text-[#800000]' }}">
                 Penelitian
@@ -107,14 +114,14 @@
                     Menjadi pusat keunggulan interdisipliner dalam bidang Science, Technology, Engineering, dan Mathematics yang berdampak global serta berkontribusi nyata bagi masyarakat.
                 </p>
                 <div class="flex space-x-4 pt-2">
-                    <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 hover:bg-amber-500 hover:text-white transition-all duration-300">
+                    <a href="https://www.instagram.com/stemeducation_unsulbar/?hl=id" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 hover:bg-amber-500 hover:text-white transition-all duration-300">
                         <i class="fa-brands fa-instagram text-sm"></i>
                     </a>
-                    <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 hover:bg-amber-500 hover:text-white transition-all duration-300">
-                        <i class="fa-brands fa-youtube text-sm"></i>
+                    <a href="https://wa.me/6287848885431" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 hover:bg-amber-500 hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
                     </a>
-                    <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 hover:bg-amber-500 hover:text-white transition-all duration-300">
-                        <i class="fa-brands fa-linkedin-in text-sm"></i>
+                    <a href="mailto:stem.education@unsulbar.ac.id" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 hover:bg-amber-500 hover:text-white transition-all duration-300">
+                        <i class="fa-regular fa-envelope text-sm"></i>
                     </a>
                 </div>
             </div>
@@ -142,7 +149,7 @@
                         </div>
                         <div class="pt-1.5">
                             <p class="text-white font-medium mb-0.5">Email Resmi</p>
-                            <a href="mailto:stem@universitas.ac.id" class="hover:text-amber-400 transition-colors">stem@universitas.ac.id</a>
+                            <a href="mailto:stem.education@unsulbar.ac.id" class="hover:text-amber-400 transition-colors">stem.education@unsulbar.ac.id</a>
                         </div>
                     </div>
                     <div class="flex items-start">
@@ -151,7 +158,7 @@
                         </div>
                         <div class="pt-1.5">
                             <p class="text-white font-medium mb-0.5">Alamat Kantor</p>
-                            <p class="leading-relaxed">Gedung Riset Terpadu, Lt. 3<br>Universitas Sulawesi Barat<br>Majene, Sulawesi Barat</p>
+                            <p class="leading-relaxed">Jl. Prof. Dr. Baharuddin Lopa, S.H., Lingkungan Talumung, Kelurahan Baurung, Kecamatan Banggae Timur, Kabupaten Majene, Sulawesi Barat (Kode Pos 91214)</p>
                         </div>
                     </div>
                 </div>

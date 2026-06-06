@@ -5,16 +5,18 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\OutputController as AdminOutputController;
 use App\Http\Controllers\Admin\PartnerController as AdminPartnerController;
 use App\Http\Controllers\Admin\ResearchController as AdminResearchController;
-use App\Http\Controllers\Admin\TeamController as AdminTeamController;
 use App\Http\Controllers\Admin\SliderController as AdminSliderController;
+use App\Http\Controllers\Admin\TeamController as AdminTeamController;
 use App\Http\Controllers\CommunityServiceController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\OutputController;
 use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResearchController;
+use App\Http\Controllers\WorkProgramController;
 use App\Models\Team;
 use Illuminate\Support\Facades\Route;
+
 
 
 Route::get('/', [LandingController::class, 'index'])->name('landing');
@@ -31,6 +33,9 @@ Route::get('/luaran/{output}', [OutputController::class, 'show'])->name('output.
 
 Route::get('/kerjasama', [PartnerController::class, 'index'])->name('partner.index');
 Route::get('/kerjasama/{partner}', [PartnerController::class, 'show'])->name('partner.show');
+
+Route::get('/program-kerja', [WorkProgramController::class, 'index'])->name('work_program.index');
+Route::get('/program-kerja/{slug}', [WorkProgramController::class, 'show'])->name('work_program.show');
 
 // ==========================================
 // ROUTE ADMIN DASHBOARD (Fase 3)
@@ -51,6 +56,7 @@ Route::prefix('admin')->name('admin.')->middleware(['auth'])->group(function () 
     ]);
     Route::resource('team', AdminTeamController::class);
     Route::resource('slider', AdminSliderController::class);
+    Route::resource('work_program', \App\Http\Controllers\Admin\WorkProgramController::class);
 });
 
 Route::get('/dashboard', function () {

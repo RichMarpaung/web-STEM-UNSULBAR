@@ -53,6 +53,13 @@
                 </div>
                 <span class="font-medium text-sm">Data Tim</span>
             </a>
+            <a href="{{ route('admin.work_program.index') }}"
+                    class="flex items-center px-4 py-3.5 rounded-2xl {{ request()->routeIs('admin.work_program.*') ? 'bg-gradient-to-r from-[#800000] to-[#6a0000] text-white shadow-lg shadow-red-900/20 transform hover:-translate-y-0.5' : 'text-slate-400 hover:bg-slate-800/50 hover:text-white' }} transition duration-300">
+                    <div class="w-8 flex justify-center">
+                        <i class="fa-solid fa-briefcase {{ request()->routeIs('admin.work_program.*') ? 'text-red-200' : '' }}"></i>
+                    </div>
+                    <span class="font-medium text-sm">Program Kerja</span>
+                </a>
             <a href="{{ route('admin.research.index') }}"
                 class="flex items-center px-4 py-3.5 rounded-2xl {{ request()->routeIs('admin.research.*') ? 'bg-gradient-to-r from-[#800000] to-[#6a0000] text-white shadow-lg shadow-red-900/20 transform hover:-translate-y-0.5' : 'text-slate-400 hover:bg-slate-800/50 hover:text-white' }} transition duration-300">
                 <div class="w-8 flex justify-center"><i
@@ -68,6 +75,7 @@
                 </div>
                 <span class="font-medium text-sm">Data Pengabdian</span>
             </a>
+
 
             <a href="{{ route('admin.output.index') }}"
                 class="flex items-center px-4 py-3.5 rounded-2xl {{ request()->routeIs('admin.output.*') ? 'bg-gradient-to-r from-[#800000] to-[#6a0000] text-white shadow-lg shadow-red-900/20 transform hover:-translate-y-0.5' : 'text-slate-400 hover:bg-slate-800/50 hover:text-white' }} transition duration-300">
